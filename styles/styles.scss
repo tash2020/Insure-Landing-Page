@@ -9,6 +9,10 @@ $neutral-colors: (
     'very-light-gray': hsl(0, 0%, 98%)
 );
 
+$bg-color: white;
+
+$insure-color: black;
+
 $font-size: 16px;
 
 $font-weight: (
@@ -22,7 +26,7 @@ body {
 
 .topbar {
     overflow: hidden;
-    background-color: map-get($neutral-colors, dark-grayish-violet);
+    background-color: $insure-color;
 }
 
 .topbar a {
@@ -41,8 +45,8 @@ body {
 }
 
 .topbar a.active {
-    background-color: map-get($neutral-colors , very-light-gray);
-    color: map-get($primary-colors , dark-violet);
+    background-color: $bg-color;
+    color: $insure-color;
 }
 
 .topbar .icon {

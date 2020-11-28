@@ -4,7 +4,7 @@ body {
 
 .topbar {
   overflow: hidden;
-  background-color: #837d87;
+  background-color: black;
 }
 
 .topbar a {
@@ -23,8 +23,8 @@ body {
 }
 
 .topbar a.active {
-  background-color: #fafafa;
-  color: #2d2640;
+  background-color: white;
+  color: black;
 }
 
 .topbar .icon {
