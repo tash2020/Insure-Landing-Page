@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
 $primary-colors: (
     'dark-violet': hsl(256, 26%, 20%),
     'grayish-blue': hsl(216, 30%, 68%)
@@ -13,8 +17,6 @@ $bg-color: white;
 
 $insure-color: black;
 
-$font-size: 16px;
-
 $font-weight: (
     'regular': 400,
     'bold': 700
@@ -26,55 +28,28 @@ $font-weight: (
     box-sizing: border-box;
 }
 
+nav {
+    background-color: pink;
+}
+
 .topbar {
-    overflow: hidden;
-    background-color: $insure-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.topbar a {
-    float: left;
+.topbar li a {
     display: block;
-    color: map-get($neutral-colors , very-light-gray);
+    padding: 15px 5px;
+}
+
+.item {
+    width: 100%;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: $font-size;
-}
-
-.topbar a:hover {
-    background-color: map-get($neutral-colors , dark-grayish-violet);
-    opacity: 0.7;
-}
-
-.topbar a.active {
-    background-color: $bg-color;
-    color: $insure-color;
-}
-
-.topbar .icon {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-    .topbar a:not(:first-child) {display: none;}
-    .topbar a.icon {
-        float: right;
-        display: block;
-        color: map-get($neutral-colors , very-light-gray);
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .topbar.responsive {position: relative;}
-    .topbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        left: 0;
-    }
 
-    .topbar.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-}
+
