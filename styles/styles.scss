@@ -26,7 +26,7 @@ $font-weight: (
 }
 
 nav {
-    background-color: pink;
+    background-color: $bg-color;
 }
 
 .topbar {
@@ -34,19 +34,43 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
 }
 
 .topbar li a {
     display: block;
-    padding: 15px 5px;
+    text-decoration: none;
 }
 
-.item {
+.option {
     width: 100%;
     text-align: center;
     display: none;
+    order: 3;
 }
 
+.active .option {
+    display: block;
+}
 
+.toggle {
+    order: 1;
+}
 
+@media screen and (min-width: 960px) {
+    .option {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
 
+    .toggle {
+        display: none;
+    }
+}
+
+.people {
+    background: url('../images/icon-people-first.svg');
+    background-size: cover;
+}
