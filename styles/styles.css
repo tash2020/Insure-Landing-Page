@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
 .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,14 +65,55 @@
   }
 }
 
-.people {
-  background: url("../images/icon-people-first.svg");
-  background-size: cover;
-  width: 100%;
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.bg {
+.people {
+  background: url("/images/image-intro-mobile.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 450px;
+}
+
+.text-group {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   background-color: #2d2640;
-  padding: 15px 10px;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #fafafa;
+  padding: 0.7rem;
+}
+
+.bg p {
+  font-family: "Karla", sans-serif;
+  color: #fafafa;
+  line-height: 1.6;
+}
+
+.bg button {
+  font-family: "Karla", sans-serif;
+  color: #fafafa;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 1em 1.3em;
+  padding: 14px 28px;
+  border: 1.7px solid white;
 }
 /*# sourceMappingURL=styles.css.map */
