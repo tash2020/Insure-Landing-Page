@@ -25,10 +25,6 @@ $font-weight: (
     box-sizing: border-box;
 }
 
-nav {
-    background-color: $bg-color;
-}
-
 .topbar {
     display: flex;
     flex-wrap: wrap;
@@ -73,4 +69,10 @@ nav {
 .people {
     background: url('../images/icon-people-first.svg');
     background-size: cover;
+    width: 100%;
+}
+
+.bg {
+    background-color: map-get($primary-colors , dark-violet);
+    padding: 15px 10px;
 }
