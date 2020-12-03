@@ -108,6 +108,7 @@ h1 {
   color: map-get($neutral-colors, very-light-gray);
   line-height: 1.6em;
   font-size: 16px;
+  justify-content: center;
 }
 
 button {
@@ -128,12 +129,14 @@ button {
 #left {
   position: absolute;
   left: 11.5%;
+  height: 30%;
 }
 
 #right {
   position: absolute;
   right: 11.5%;
   top: 128.9%;
+  height: 50%;
 }
 
 .parents {
@@ -202,4 +205,43 @@ h4 {
   display: inline-flex;
   justify-content: space-evenly;
   margin: 1.3em 0 2em 0;
+}
+
+h5 {
+  font-family: $font-body;
+  color: map-get($neutral-colors, dark-grayish-violet);
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.parents2 li {
+  list-style: none;
+  line-height: 2em;
+  font-family: $font-body;
+  color: map-get($neutral-colors, very-dark-violet);
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: map-get($font-weight, bold);
+}
+
+.parents2 section {
+  margin: 1.3em 0;
+  letter-spacing: 0.1em;
+}
+
+#pattern-footer {
+  position: absolute;
+  left: 15%;
+  z-index: -1;
+  height: 25%;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  font-family: $font-heading;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

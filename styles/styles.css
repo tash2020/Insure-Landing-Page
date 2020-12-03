@@ -112,6 +112,9 @@ h1 {
   color: #fafafa;
   line-height: 1.6em;
   font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 button {
@@ -132,12 +135,14 @@ button {
 #left {
   position: absolute;
   left: 11.5%;
+  height: 30%;
 }
 
 #right {
   position: absolute;
   right: 11.5%;
   top: 128.9%;
+  height: 50%;
 }
 
 .parents {
@@ -220,5 +225,44 @@ h4 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 1.3em 0 2em 0;
+}
+
+h5 {
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.parents2 li {
+  list-style: none;
+  line-height: 2em;
+  font-family: "Karla", sans-serif;
+  color: #2b272f;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 700;
+}
+
+.parents2 section {
+  margin: 1.3em 0;
+  letter-spacing: 0.1em;
+}
+
+#pattern-footer {
+  position: absolute;
+  left: 15%;
+  z-index: -1;
+  height: 25%;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */
