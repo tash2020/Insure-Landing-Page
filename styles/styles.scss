@@ -1,12 +1,12 @@
 $primary-colors: (
-  "dark-violet": hsl(256, 26%, 20%),
-  "grayish-blue": hsl(216, 30%, 68%),
+  'dark-violet': hsl(256, 26%, 20%),
+  'grayish-blue': hsl(216, 30%, 68%),
 );
 
 $neutral-colors: (
-  "very-dark-violet": hsl(270, 9%, 17%),
-  "dark-grayish-violet": hsl(273, 4%, 51%),
-  "very-light-gray": hsl(0, 0%, 98%),
+  'very-dark-violet': hsl(270, 9%, 17%),
+  'dark-grayish-violet': hsl(273, 4%, 51%),
+  'very-light-gray': hsl(0, 0%, 98%),
 );
 
 $bg-color: white;
@@ -14,12 +14,12 @@ $bg-color: white;
 $insure-color: black;
 
 $font-weight: (
-  "regular": 400,
-  "bold": 700,
+  'regular': 400,
+  'bold': 700,
 );
 
-$font-heading: "DM Serif Display", serif;
-$font-body: "Karla", sans-serif;
+$font-heading: 'DM Serif Display', serif;
+$font-body: 'Karla', sans-serif;
 
 * {
   margin: 0;
@@ -62,7 +62,7 @@ body {
   order: 1;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 660px) {
   .option {
     order: 1;
     position: relative;
@@ -81,7 +81,7 @@ body {
 }
 
 .picture-bg {
-  background: url("/images/image-intro-mobile.jpg");
+  background: url('/images/image-intro-mobile.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 375px;
@@ -133,6 +133,7 @@ button {
 #right {
   position: absolute;
   right: 11.5%;
+  top: 128.9%;
 }
 
 .parents {
@@ -168,17 +169,37 @@ article p {
 .four {
   background-color: map-get($primary-colors, dark-violet);
   width: 320px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 10em;
+  height: 330px;
 }
 
 h4 {
   color: map-get($neutral-colors, very-light-gray);
   font-family: $font-heading;
-  font-size: 2.5em;
-  margin: 0.5em 0;
+  font-size: 2.4em;
+  margin-top: 1em;
+}
+
+#four-btn {
+  margin: 2em 0 3em 0;
+}
+
+#work {
+  position: absolute;
+  right: 50%;
+}
+
+.parents2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-links li {
+  list-style-type: none;
+}
+
+#social-icons {
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 1.3em 0 2em 0;
 }
