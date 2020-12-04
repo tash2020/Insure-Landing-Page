@@ -25,8 +25,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -60,20 +58,6 @@ body {
           order: 1;
 }
 
-@media screen and (min-width: 601px) {
-  .option {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    position: relative;
-    display: block;
-    width: auto;
-  }
-  .toggle {
-    display: none;
-  }
-}
-
 .bg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,20 +74,21 @@ body {
   background-repeat: no-repeat;
   width: 375px;
   height: 450px;
+  position: relative;
 }
 
 .text-group {
   text-align: center;
   background-color: #2d2640;
   width: 375px;
-  height: 445px;
+  height: 480px;
 }
 
 h1 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #fafafa;
-  margin: 2em 0.7em 0.3em 1em;
+  margin: 2em 0.5em 0 1em;
   font-size: 2.6em;
 }
 
@@ -111,10 +96,7 @@ h1 {
   font-family: "Karla", sans-serif;
   color: #fafafa;
   line-height: 1.6em;
-  font-size: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 1.7em;
 }
 
 button {
@@ -123,26 +105,25 @@ button {
   background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin: 1em 1.3em;
-  padding: 10px 25px;
+  margin: 1em 1em;
+  padding: 10px 20px;
   border: 1.7px solid white;
 }
 
 .btn-position {
-  margin-top: 1em;
+  margin-top: -1em;
 }
 
 #left {
   position: absolute;
-  left: 11.5%;
-  height: 30%;
+  top: 80%;
+  left: 11%;
 }
 
 #right {
   position: absolute;
   right: 11.5%;
-  top: 128.9%;
-  height: 50%;
+  top: 133%;
 }
 
 .parents {
@@ -155,6 +136,7 @@ button {
           flex-direction: column;
   text-align: center;
   padding: 4em;
+  background-color: white;
 }
 
 .line-parents {
@@ -281,5 +263,26 @@ h5 {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (min-width: 601px) {
+  .option {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .text-group {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
