@@ -60,7 +60,7 @@ body {
           order: 1;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 601px) {
   .option {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -157,6 +157,14 @@ button {
   padding: 4em;
 }
 
+.line-parents {
+  border: thin solid;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: #837d87;
+}
+
 h2 {
   font-family: "DM Serif Display", serif;
   font-size: 2.5em;
@@ -217,6 +225,10 @@ h4 {
   list-style-type: none;
 }
 
+.social-links {
+  margin-top: 3em;
+}
+
 #social-icons {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -245,7 +257,7 @@ h5 {
 }
 
 .parents2 section {
-  margin: 1.3em 0;
+  margin: 1em 0;
   letter-spacing: 0.1em;
 }
 
@@ -253,7 +265,12 @@ h5 {
   position: absolute;
   left: 15%;
   z-index: -1;
-  height: 25%;
+}
+
+.line-parents2 {
+  margin-bottom: 2em;
+  border: thin solid;
+  border-color: #837d87;
 }
 
 .attribution {

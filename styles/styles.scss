@@ -62,7 +62,7 @@ body {
   order: 1;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 601px) {
   .option {
     order: 1;
     position: relative;
@@ -146,6 +146,14 @@ button {
   padding: 4em;
 }
 
+.line-parents {
+  border: thin solid;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  border-color: map-get($neutral-colors, dark-grayish-violet);
+}
+
 h2 {
   font-family: $font-heading;
   font-size: 2.5em;
@@ -201,6 +209,10 @@ h4 {
   list-style-type: none;
 }
 
+.social-links {
+  margin-top: 3em;
+}
+
 #social-icons {
   display: inline-flex;
   justify-content: space-evenly;
@@ -225,7 +237,7 @@ h5 {
 }
 
 .parents2 section {
-  margin: 1.3em 0;
+  margin: 1em 0;
   letter-spacing: 0.1em;
 }
 
@@ -233,7 +245,12 @@ h5 {
   position: absolute;
   left: 15%;
   z-index: -1;
-  height: 25%;
+}
+
+.line-parents2 {
+  margin-bottom: 2em;
+  border: thin solid;
+  border-color: map-get($neutral-colors, dark-grayish-violet);
 }
 
 .attribution {
