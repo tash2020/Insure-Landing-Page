@@ -27,11 +27,27 @@ $font-body: 'Karla', sans-serif;
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+nav {
+  background: $bg-color;
+  padding: 0 2em;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
 }
 
 .topbar {
@@ -44,12 +60,16 @@ body {
 .topbar li a {
   display: block;
   text-decoration: none;
+  color: map-get($neutral-colors, dark-grayish-violet);
+  padding: 15px 5px;
 }
 
 .option {
   width: 100%;
   text-align: center;
   display: none;
+  padding: 10px;
+  width: 100%;
   order: 3;
 }
 
@@ -167,6 +187,9 @@ article p {
   background-color: map-get($primary-colors, dark-violet);
   width: 320px;
   height: 330px;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 h4 {
@@ -262,8 +285,39 @@ h5 {
   }
 
   .text-group {
-    width: 100%;
-    justify-content: space-between;
     text-align: left;
+    width: auto;
+  }
+
+  .parents {
+    width: auto;
+    flex-direction: row;
+    text-align: left;
+    padding: 5em;
+  }
+
+  .parents .one .two .three {
+    padding: 0 2em 0 2em;
+  }
+
+  h2 {
+    position: absolute;
+    margin-block-end: auto;
+    margin-block-start: auto;
+    text-align: left;
+  }
+
+  .line-parents {
+    width: auto;
+    height: 50px;
+    position: absolute;
+  }
+
+  .four {
+    display: grid;
+    place-items: left;
+    text-align: left;
+    width: fit-content;
+    height: 500px;
   }
 }

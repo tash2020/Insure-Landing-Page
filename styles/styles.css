@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +26,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+nav {
+  background: white;
+  padding: 0 2em;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
 }
 
 .topbar {
@@ -37,12 +54,16 @@ body {
 .topbar li a {
   display: block;
   text-decoration: none;
+  color: #837d87;
+  padding: 15px 5px;
 }
 
 .option {
   width: 100%;
   text-align: center;
   display: none;
+  padding: 10px;
+  width: 100%;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
@@ -174,6 +195,13 @@ article p {
   background-color: #2d2640;
   width: 320px;
   height: 330px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h4 {
@@ -278,11 +306,43 @@ h5 {
     display: none;
   }
   .text-group {
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     text-align: left;
+    width: auto;
+  }
+  .parents {
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    padding: 5em;
+  }
+  .parents .one .two .three {
+    padding: 0 2em 0 2em;
+  }
+  h2 {
+    position: absolute;
+    -webkit-margin-after: auto;
+            margin-block-end: auto;
+    -webkit-margin-before: auto;
+            margin-block-start: auto;
+    text-align: left;
+  }
+  .line-parents {
+    width: auto;
+    height: 50px;
+    position: absolute;
+  }
+  .four {
+    display: -ms-grid;
+    display: grid;
+    place-items: left;
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 500px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
