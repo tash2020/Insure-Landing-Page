@@ -201,6 +201,7 @@ h4 {
 
 #four-btn {
   margin: 2em 0 3em 0;
+  position: relative;
 }
 
 #work {
@@ -285,26 +286,25 @@ h5 {
   }
 
   .text-group {
-    text-align: left;
-    width: auto;
+    width: fit-content;
   }
 
   .parents {
     width: auto;
-    flex-direction: row;
     text-align: left;
-    padding: 5em;
+    margin: 5em;
+    justify-content: left;
   }
 
   .parents .one .two .three {
     padding: 0 2em 0 2em;
+    flex-direction: row;
   }
 
   h2 {
-    position: absolute;
-    margin-block-end: auto;
-    margin-block-start: auto;
+    position: relative;
     text-align: left;
+    margin: 2em;
   }
 
   .line-parents {
@@ -314,10 +314,19 @@ h5 {
   }
 
   .four {
-    display: grid;
-    place-items: left;
     text-align: left;
-    width: fit-content;
-    height: 500px;
+    display: flex;
+    width: 600px;
+    height: 200px;
+    margin: 2em;
+  }
+
+  #four-btn {
+    position: relative;
+    align-items: right;
+  }
+
+  h4 {
+    font-size: 2em;
   }
 }

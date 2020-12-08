@@ -213,6 +213,7 @@ h4 {
 
 #four-btn {
   margin: 2em 0 3em 0;
+  position: relative;
 }
 
 #work {
@@ -306,28 +307,29 @@ h5 {
     display: none;
   }
   .text-group {
-    text-align: left;
-    width: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .parents {
     width: auto;
+    text-align: left;
+    margin: 5em;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .parents .one .two .three {
+    padding: 0 2em 0 2em;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    text-align: left;
-    padding: 5em;
-  }
-  .parents .one .two .three {
-    padding: 0 2em 0 2em;
   }
   h2 {
-    position: absolute;
-    -webkit-margin-after: auto;
-            margin-block-end: auto;
-    -webkit-margin-before: auto;
-            margin-block-start: auto;
+    position: relative;
     text-align: left;
+    margin: 2em;
   }
   .line-parents {
     width: auto;
@@ -335,14 +337,22 @@ h5 {
     position: absolute;
   }
   .four {
-    display: -ms-grid;
-    display: grid;
-    place-items: left;
     text-align: left;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 600px;
+    height: 200px;
+    margin: 2em;
+  }
+  #four-btn {
+    position: relative;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+  }
+  h4 {
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
