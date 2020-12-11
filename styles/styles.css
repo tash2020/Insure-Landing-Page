@@ -30,9 +30,6 @@ body {
 
 nav {
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -52,8 +49,7 @@ nav {
   list-style-type: none;
 }
 
-.topbar li a {
-  display: block;
+.topbar a {
   text-decoration: none;
   color: #837d87;
   padding: 15px 5px;
