@@ -21,30 +21,33 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="/dist/css/main.css" />
+
     <title>Frontend Mentor | Insure landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#" class="logo">
-          <img src="./images/logo.svg" alt="logo" />
+    <header class="header">
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <a href="#" class="header__logo">
+          <img src="./dist/images/logo.svg" alt="Insure" />
         </a>
-        <div class="topbar">
-          <a href="#" class="option">How we work</a>
-          <a href="#" class="option">Blog</a>
-          <a href="#" class="option">Account</a>
-          <a href="#" class="option">View Plans</a>
 
-          <div class="toggle">
-            <a href="#">
-              <img src="./images/icon-hamburger.svg" alt="hamburger" />
-            </a>
-          </div>
+        <a href="#" class="header__hamburger hide-for-dekstop">
+          <img src="./dist/images/icon-hamburger.svg" alt="hamburger" />
+        </a>
+
+        <div class="header__options hide-for-mobile">
+          <a href="#">How we work</a>
+          <a href="#">Blog</a>
+          <a href="#">Account</a>
+          <a href="#">View Plans</a>
         </div>
       </nav>
     </header>
+
+    <!--
 
     <div class="bg">
       <div class="picture-bg"></div>
@@ -193,5 +196,6 @@
       >. Coded by
       <a href="https://github.com/tash2020" target="_blank">Tasha</a>.
     </div>
+    -->
   </body>
 </html>

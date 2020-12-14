@@ -1,0 +1,54 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: $font-med;
+  color: $darkGrayishViolet;
+  line-height: 1.6;
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $darkGrayishViolet;
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-dekstop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
