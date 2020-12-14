@@ -1,9 +1,12 @@
 .header {
   nav {
-    padding: 22px;
+    padding: 1.28125rem 1.375rem;
   }
+
   &__logo {
     img {
+      width: 7.0625rem;
+      height: 1.1875rem;
     }
   }
 
@@ -13,6 +16,16 @@
   &__options {
     a {
       font-size: $font-sm;
+      text-transform: uppercase;
+      transition: color 150ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 27px;
+      }
+
+      &:hover {
+        color: $veryDarkViolet;
+      }
     }
   }
 }
