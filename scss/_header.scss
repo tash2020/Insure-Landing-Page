@@ -23,23 +23,8 @@
         margin-right: 27px;
       }
 
-      &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        transition: 150ms ease-in-out;
-      }
-
       &:hover {
         color: $veryDarkViolet;
-      }
-
-      &:active {
-        background-color: $darkViolet;
-        color: $veryLightGray;
-        padding: 1rem 0.875rem;
-        margin: 1rem;
       }
     }
   }
