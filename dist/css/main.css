@@ -64,6 +64,14 @@ a:hover {
   }
 }
 
+button,
+.btn {
+  position: relative;
+  width: 7.1875rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
 .header nav {
   padding: 1.28125rem 1.375rem;
 }
@@ -84,23 +92,7 @@ a:hover {
   margin-right: 27px;
 }
 
-.header__options a::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  -webkit-transition: 150ms ease-in-out;
-  transition: 150ms ease-in-out;
-}
-
 .header__options a:hover {
   color: #2b272f;
-}
-
-.header__options a:active {
-  background-color: #2d2640;
-  color: #fafafa;
-  padding: 1rem 0.875rem;
-  margin: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
