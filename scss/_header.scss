@@ -11,20 +11,35 @@
   }
 
   &__hamburger {
+    &.open {
+    }
   }
 
   &__options {
-    a {
+    &__list {
       font-size: $font-sm;
       text-transform: uppercase;
-      transition: color 150ms ease-in-out;
+      transition: color 250ms ease-in-out;
+      font-weight: $font-regular;
 
       &:not(:last-child) {
         margin-right: 27px;
       }
 
       &:hover {
-        color: $veryDarkViolet;
+        color: $darkViolet;
+      }
+
+      &--view-plans {
+        border: 2px solid $veryDarkViolet;
+        padding: 0.57rem 1.4rem;
+        position: relative;
+        transition: 250ms ease-in-out;
+
+        &:hover {
+          background-color: $darkViolet;
+          color: $veryLightGray;
+        }
       }
     }
   }
