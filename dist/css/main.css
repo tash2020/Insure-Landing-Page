@@ -81,18 +81,32 @@ button,
   height: 1.1875rem;
 }
 
-.header__options a {
+.header__options__list {
   font-size: 0.6875rem;
   text-transform: uppercase;
-  -webkit-transition: color 150ms ease-in-out;
-  transition: color 150ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+  font-weight: 400;
 }
 
-.header__options a:not(:last-child) {
+.header__options__list:not(:last-child) {
   margin-right: 27px;
 }
 
-.header__options a:hover {
-  color: #2b272f;
+.header__options__list:hover {
+  color: #2d2640;
+}
+
+.header__options__list--view-plans {
+  border: 2px solid #2b272f;
+  padding: 0.57rem 1.4rem;
+  position: relative;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.header__options__list--view-plans:hover {
+  background-color: #2d2640;
+  color: #fafafa;
 }
 /*# sourceMappingURL=main.css.map */
