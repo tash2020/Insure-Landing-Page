@@ -86,7 +86,7 @@ button,
   text-transform: uppercase;
   -webkit-transition: color 250ms ease-in-out;
   transition: color 250ms ease-in-out;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .header__options__list:not(:last-child) {
@@ -107,6 +107,29 @@ button,
 
 .header__options__list--view-plans:hover {
   background-color: #2d2640;
+  color: #fafafa;
+}
+
+.header .overlay {
+  background-color: #2d2640;
+  top: 4.6875rem;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  position: fixed;
+}
+
+.header__menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #fafafa;
 }
 /*# sourceMappingURL=main.css.map */
