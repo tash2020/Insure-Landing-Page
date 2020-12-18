@@ -10,17 +10,12 @@
     }
   }
 
-  &__hamburger {
-    &.open {
-    }
-  }
-
   &__options {
     &__list {
       font-size: $font-sm;
       text-transform: uppercase;
       transition: color 250ms ease-in-out;
-      font-weight: $font-regular;
+      font-weight: $font-bold;
 
       &:not(:last-child) {
         margin-right: 27px;
@@ -41,6 +36,27 @@
           color: $veryLightGray;
         }
       }
+    }
+  }
+
+  .overlay {
+    background-color: $darkViolet;
+    top: 4.6875rem;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    position: fixed;
+  }
+
+  &__menu {
+    &__item {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 1.5rem;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      color: $veryLightGray;
     }
   }
 }
