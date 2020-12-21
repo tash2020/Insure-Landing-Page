@@ -53,10 +53,11 @@ a:hover {
   }
 }
 
-button,
-.btn {
+button {
   position: relative;
-  width: 7.1875rem;
+  border: 2px solid $veryLightGray;
+  background-color: transparent;
+  color: $veryLightGray;
+  padding: 0.9rem 2.075rem;
   height: 3rem;
-  padding: 1rem;
 }
