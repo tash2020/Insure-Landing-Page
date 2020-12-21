@@ -23,7 +23,7 @@
 
   &__hamburger {
     &.open {
-      content: url(/dist/images/icon-close.svg);
+      content: url('/images/icon-close.svg');
       overflow: hidden;
     }
   }
