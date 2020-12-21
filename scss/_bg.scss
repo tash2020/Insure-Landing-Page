@@ -1,0 +1,26 @@
+.bg {
+  &__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
+    justify-content: center;
+    background-color: $darkViolet;
+
+    h1 {
+      font-family: 'DM serif Display', serif;
+      font-weight: $font-regular;
+      color: $veryLightGray;
+      font-size: 1.875rem;
+    }
+
+    p {
+      color: $veryLightGray;
+      line-height: 1.6;
+    }
+  }
+}
