@@ -63,12 +63,13 @@ a:hover {
   }
 }
 
-button,
-.btn {
+button {
   position: relative;
-  width: 7.1875rem;
+  border: 2px solid #fafafa;
+  background-color: transparent;
+  color: #fafafa;
+  padding: 0.9rem 2.075rem;
   height: 3rem;
-  padding: 1rem;
 }
 
 .header {
@@ -115,7 +116,7 @@ button,
 }
 
 .header__hamburger.open {
-  content: url(/dist/images/icon-close.svg);
+  content: url("/images/icon-close.svg");
   overflow: hidden;
 }
 
@@ -147,5 +148,32 @@ button,
 .header__options__list--view-plans:hover {
   background-color: #2d2640;
   color: #fafafa;
+}
+
+.bg__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.bg__text {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d2640;
+}
+
+.bg__text h1 {
+  font-family: 'DM serif Display', serif;
+  font-weight: 400;
+  color: #fafafa;
+  font-size: 1.875rem;
+}
+
+.bg__text p {
+  color: #fafafa;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */
