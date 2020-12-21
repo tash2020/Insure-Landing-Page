@@ -1,7 +1,9 @@
-function openNav() {
-  document.getElementById('myOverlay').style.height = '100%';
-}
+const hamburger = document.querySelector('#hamburger');
 
-function closeNav() {
-  document.getElementById('myOverlay').style.height = '0%';
-}
+hamburger.addEventListener('click', function () {
+  if (hamburger.classList.contains('open')) {
+    hamburger.classList.remove('open');
+  } else {
+    hamburger.classList.add('open');
+  }
+});
