@@ -3,10 +3,28 @@
     padding: 1.28125rem 1.375rem;
   }
 
+  /*
+  .overlay {
+    background-color: $darkViolet;
+    top: 4.6875rem;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    position: fixed;
+  }
+  */
+
   &__logo {
     img {
       width: 7.0625rem;
       height: 1.1875rem;
+    }
+  }
+
+  &__hamburger {
+    &.open {
+      content: url(/dist/images/icon-close.svg);
+      overflow: hidden;
     }
   }
 
@@ -16,6 +34,7 @@
       text-transform: uppercase;
       transition: color 250ms ease-in-out;
       font-weight: $font-bold;
+      color: $darkGrayishViolet;
 
       &:not(:last-child) {
         margin-right: 27px;
@@ -39,24 +58,25 @@
     }
   }
 
-  .overlay {
-    background-color: $darkViolet;
-    top: 4.6875rem;
-    left: 0px;
-    right: 0px;
-    bottom: 0;
-    position: fixed;
-  }
-
+  /*
   &__menu {
     &__item {
+      position: absolute;
       display: flex;
-      text-align: center;
       justify-content: center;
-      padding-top: 1.5rem;
+      align-items: center;
+      padding-top: 3.125rem;
       text-transform: uppercase;
-      font-weight: $font-bold;
       color: $veryLightGray;
+      letter-spacing: 0.1rem;
+
+      &--view-plans {
+        border: 2px solid $veryLightGray;
+        padding: 1.125rem 3.4375rem;
+        width: 20.375rem;
+        height: 3.4375rem;
+      }
     }
   }
+  */
 }
