@@ -29,27 +29,15 @@
   </head>
   <body>
     <header class="header">
+      <!--<div class="overlay"></div>-->
       <nav class="flex flex-jc-sb flex-ai-c">
         <a href="#" class="header__logo">
           <img src="./dist/images/logo.svg" alt="Insure" />
         </a>
 
-        <a href="#" class="header__hamburger hide-for-dekstop">
+        <a href="#" id="hamburger" class="header__hamburger hide-for-dekstop">
           <img src="./dist/images/icon-hamburger.svg" alt="hamburger" />
         </a>
-
-        <a href="#" class="header_close hide-for-dekstop" onclick="closeNav()">
-          <img src="./dist/images/icon-close.svg" alt="close" />
-        </a>
-
-        <div id="myOverlay" class="overlay hide-for-dekstop">
-          <div class="header_menu">
-            <a class="header__menu__item" href="#">How we work</a>
-            <a class="header__menu__item" href="#">Blog</a>
-            <a class="header__menu__item" href="#">Account</a>
-            <a class="header__menu__item" href="#">View Plans</a>
-          </div>
-        </div>
 
         <div class="header__options hide-for-mobile">
           <a class="header__options__list" href="#">How we work</a>
@@ -60,6 +48,17 @@
           </a>
         </div>
       </nav>
+
+      <!--
+      <div class="header_menu">
+        <a class="header__menu__item" href="#">How we work</a>
+        <a class="header__menu__item" href="#">Blog</a>
+        <a class="header__menu__item" href="#">Account</a>
+        <a class="header__menu__item" href="#">
+          <span class="header__menu__item--view-plans">View Plans</span>
+        </a>
+      </div>
+      -->
     </header>
 
     <!--
