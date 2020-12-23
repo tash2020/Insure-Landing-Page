@@ -64,12 +64,12 @@ a:hover {
 }
 
 button {
-  position: relative;
   border: 2px solid #fafafa;
   background-color: transparent;
   color: #fafafa;
-  padding: 0.9rem 2.075rem;
-  height: 3rem;
+  padding: 0.9375rem 1.675rem;
+  height: 2.1875rem;
+  width: 8.9375rem;
 }
 
 .header {
@@ -154,7 +154,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .bg__text {
@@ -163,17 +162,24 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #2d2640;
+  width: 21.5625rem;
+  height: 30.9375rem;
 }
 
 .bg__text h1 {
   font-family: 'DM serif Display', serif;
   font-weight: 400;
   color: #fafafa;
-  font-size: 1.875rem;
+  font-size: 2.75rem;
 }
 
 .bg__text p {
   color: #fafafa;
   line-height: 1.6;
+}
+
+.bg__text__btn {
+  position: relative;
+  letter-spacing: 1;
 }
 /*# sourceMappingURL=main.css.map */
