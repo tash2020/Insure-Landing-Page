@@ -14,7 +14,6 @@ body {
   padding: 0;
   font-family: 'Karla', sans-serif;
   font-size: $font-med;
-  font-weight: $font-regular;
   color: $darkGrayishViolet;
   line-height: 1.6;
 }
@@ -57,7 +56,11 @@ button {
   border: 2px solid $veryLightGray;
   background-color: transparent;
   color: $veryLightGray;
-  padding: 0.9375rem 1.675rem;
-  height: 2.1875rem;
-  width: 8.9375rem;
+  padding: 0.4375rem 1.875rem;
+  height: 2.7875rem;
+  width: 9.2375rem;
+  position: relative;
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+  font-size: $font-sm;
 }
