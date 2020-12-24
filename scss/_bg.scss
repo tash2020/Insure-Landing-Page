@@ -9,24 +9,37 @@
     text-align: center;
     justify-content: center;
     background-color: $darkViolet;
-    width: 21.5625rem;
-    height: 30.9375rem;
+    width: 23.4625rem;
+    height: 32.26rem;
+
+    &__pattern {
+      &--left {
+        position: absolute;
+        z-index: 1;
+      }
+    }
 
     h1 {
       font-family: 'DM serif Display', serif;
       font-weight: $font-regular;
       color: $veryLightGray;
       font-size: 2.75rem;
+      margin: auto;
+      padding-top: 6.25rem;
+      line-height: normal;
     }
 
     p {
       color: $veryLightGray;
       line-height: 1.6;
+      padding-top: 1.875rem;
+      padding-bottom: 2.25rem;
+      margin: 0 auto;
     }
 
     &__btn {
-      position: relative;
-      letter-spacing: 1;
+      letter-spacing: 0.0625rem;
+      padding-bottom: 5.625rem;
     }
   }
 }
