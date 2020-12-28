@@ -18,6 +18,14 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  margin: 0 auto;
+  padding-top: 6.25rem;
+  padding-right: 1.5rem;
+  padding-bottom: 5.625rem;
+  padding-left: 1.5rem;
+}
+
 .flex {
   display: flex;
 
@@ -52,15 +60,32 @@ a:hover {
   }
 }
 
-button {
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+button,
+.button {
+  display: inline-block;
+  position: relative;
   border: 2px solid $veryLightGray;
   background-color: transparent;
   color: $veryLightGray;
-  padding: 0.4375rem 1.875rem;
-  height: 2.7875rem;
-  width: 9.2375rem;
-  position: relative;
+  padding: 0.57rem 1.4rem;
+  height: 2.375rem;
+  width: 9rem;
   letter-spacing: 0.09375rem;
   text-transform: uppercase;
   font-size: $font-sm;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $veryLightGray;
+    color: $veryDarkViolet;
+    font-weight: $font-bold;
+  }
 }
