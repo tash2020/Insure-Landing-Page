@@ -1,5 +1,6 @@
 .header {
   nav {
+    position: relative;
     padding: 1.28125rem 1.375rem;
   }
 
@@ -35,6 +36,7 @@
       transition: color 250ms ease-in-out;
       font-weight: $font-bold;
       color: $darkGrayishViolet;
+      letter-spacing: 0.09375rem;
 
       &:not(:last-child) {
         margin-right: 27px;
