@@ -30,7 +30,7 @@
   <body>
     <header class="header">
       <div class="overlay"></div>
-      <nav class="container flex flex-jc-sb flex-ai-c">
+      <nav class="container container--paddings flex flex-jc-sb flex-ai-c">
         <a href="#" class="header__logo">
           <img src="/images/logo.svg" alt="Insure" />
         </a>
@@ -61,11 +61,10 @@
       -->
     </header>
 
-    <div class="bg">
+    <div class="bg container">
       <div class="bg__image"></div>
-
-      <div class="bg__text container">
-        <div class="bg__text__pattern--left"></div>
+      <div class="bg__text container--paddings">
+        <span class="hide-for-mobile"><hr /></span>
         <h1>Humanizing your insurance.</h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our
@@ -74,6 +73,8 @@
         </p>
         <button class="bg__text__button">View plans</button>
       </div>
+
+      <div class="bg__pattern--left"></div>
     </div>
 
     <!--
