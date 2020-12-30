@@ -24,14 +24,24 @@
     }
   }
 
-  &__pattern {
-    &--left {
-      background-image: url('/images/bg-pattern-intro-left-mobile.svg');
+  &__left1 {
+    position: absolute;
+  }
 
-      @include breakpoint-up(large) {
-        background-image: url('/images/bg-pattern-intro-left-desktop.svg');
-      }
-    }
+  &__left2 {
+    position: absolute;
+    top: 68.3%;
+  }
+
+  &__right1 {
+    position: absolute;
+    left: 78.4%;
+    top: 125%;
+  }
+
+  &__right2 {
+    position: absolute;
+    left: 65%;
   }
 
   &__text {
