@@ -265,12 +265,12 @@ button:hover,
 .bg__right1 {
   position: absolute;
   left: 78.4%;
-  top: 125%;
+  top: 150%;
 }
 
 .bg__right2 {
   position: absolute;
-  left: 65%;
+  left: 60%;
 }
 
 .bg__text {
@@ -297,7 +297,7 @@ button:hover,
   color: #fafafa;
   font-size: 2.75rem;
   margin-bottom: 1.875rem;
-  line-height: normal;
+  line-height: 0.9;
 }
 
 @media (min-width: 64em) {
@@ -315,5 +315,18 @@ button:hover,
   .bg__text p {
     font-size: 1.125rem;
   }
+}
+
+.about {
+  text-align: center;
+}
+
+.about__line {
+  position: absolute;
+  top: 180%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
