@@ -16,7 +16,6 @@ body {
   font-size: $font-med;
   color: $darkGrayishViolet;
   line-height: 1.3;
-  min-width: fit-content;
 
   &.nonscroll {
     overflow: hidden;
@@ -24,7 +23,6 @@ body {
 }
 
 .container {
-  max-width: 69rem;
   margin: 0 auto;
 
   &--paddings {
@@ -95,10 +93,16 @@ p {
   margin-bottom: 0px;
 }
 
-hr {
-  width: 30%;
-  margin-left: 0;
-  margin-bottom: 3rem;
+h2 {
+  font-size: 2.5rem;
+  font-family: 'DM Serif Display', sans-serif;
+  color: $veryDarkViolet;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: 'DM Serif Display', sans-serif;
+  color: $darkViolet;
 }
 
 button,
