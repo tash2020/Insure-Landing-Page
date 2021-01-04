@@ -35,7 +35,7 @@
 
   &__right1 {
     position: absolute;
-    left: 78.4%;
+    left: 64%;
     top: 150%;
   }
 
@@ -46,8 +46,6 @@
 
   &__text {
     text-align: center;
-    width: 23.4375rem;
-    height: 31.25rem;
 
     @include breakpoint-up(large) {
       flex: 1;
