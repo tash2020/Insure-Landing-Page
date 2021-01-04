@@ -18,9 +18,6 @@ body {
   font-size: 1rem;
   color: #837d87;
   line-height: 1.3;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 body.nonscroll {
@@ -28,7 +25,6 @@ body.nonscroll {
 }
 
 .container {
-  max-width: 69rem;
   margin: 0 auto;
   /*
     @include breakpoint-up(large) {
@@ -108,10 +104,16 @@ p {
   margin-bottom: 0px;
 }
 
-hr {
-  width: 30%;
-  margin-left: 0;
-  margin-bottom: 3rem;
+h2 {
+  font-size: 2.5rem;
+  font-family: 'DM Serif Display', sans-serif;
+  color: #2b272f;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: 'DM Serif Display', sans-serif;
+  color: #2d2640;
 }
 
 button,
@@ -264,7 +266,7 @@ button:hover,
 
 .bg__right1 {
   position: absolute;
-  left: 78.4%;
+  left: 64%;
   top: 150%;
 }
 
@@ -275,8 +277,6 @@ button:hover,
 
 .bg__text {
   text-align: center;
-  width: 23.4375rem;
-  height: 31.25rem;
 }
 
 @media (min-width: 64em) {
@@ -319,14 +319,5 @@ button:hover,
 
 .about {
   text-align: center;
-}
-
-.about__line {
-  position: absolute;
-  top: 180%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%;
-  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
