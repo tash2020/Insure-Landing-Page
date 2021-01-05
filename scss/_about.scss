@@ -1,15 +1,33 @@
 .about {
   text-align: center;
 
-  &__snappy {
-  }
-
-  &__affordable {
-  }
-
-  &__people {
+  p {
+    margin-bottom: 3.875rem;
+    line-height: 1.6;
   }
 
   &__work {
+    background-color: $darkViolet;
+    width: 20rem;
+    height: 21.875rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    h3 {
+      color: $veryLightGray;
+      padding-top: 4.625rem;
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 2.8125rem;
+    }
+
+    &--button {
+      width: 10rem;
+    }
+
+    &--pattern {
+      position: absolute;
+      left: 46vw;
+    }
   }
 }
