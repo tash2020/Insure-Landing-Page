@@ -38,8 +38,11 @@ body {
     }
   }
 
-  &--pt {
-    padding-top: 6.25rem;
+  &--paddings2 {
+    padding-top: 8.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 8.75rem;
+    padding-left: 1.5rem;
   }
 
   /*
@@ -97,12 +100,14 @@ h2 {
   font-size: 2.5rem;
   font-family: 'DM Serif Display', sans-serif;
   color: $veryDarkViolet;
+  margin-bottom: 5.125rem;
 }
 
 h3 {
   font-size: 1.6rem;
   font-family: 'DM Serif Display', sans-serif;
   color: $darkViolet;
+  margin-bottom: 1.56rem;
 }
 
 button,
@@ -124,4 +129,8 @@ button,
     color: $veryDarkViolet;
     font-weight: $font-bold;
   }
+}
+
+.icons {
+  margin-bottom: 2.5rem;
 }
