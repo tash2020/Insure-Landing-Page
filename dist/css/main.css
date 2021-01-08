@@ -26,13 +26,7 @@ body.nonscroll {
 
 .container {
   margin: 0 auto;
-  /*
-    @include breakpoint-up(large) {
-      
-      
-      padding-left: 10.3125rem;
-    }
-    */
+  max-width: 65rem;
 }
 
 .container--paddings {
@@ -40,14 +34,6 @@ body.nonscroll {
   padding-right: 1.5rem;
   padding-bottom: 5.625rem;
   padding-left: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  .container--paddings {
-    padding-right: 10.3125rem;
-    padding-bottom: 7.5rem;
-    padding-left: 10.3125rem;
-  }
 }
 
 .container--paddings2 {
@@ -330,9 +316,29 @@ button:hover,
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .about {
+    text-align: left;
+  }
+}
+
 .about p {
   margin-bottom: 3.875rem;
   line-height: 1.6;
+}
+
+.about__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 64em) {
+  .about__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .about__work {
@@ -341,6 +347,13 @@ button:hover,
   height: 21.875rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 64em) {
+  .about__work {
+    width: 50rem;
+    height: 15rem;
+  }
 }
 
 .about__work h3 {
