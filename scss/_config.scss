@@ -24,18 +24,13 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: 65rem;
 
   &--paddings {
     padding-top: 6.25rem;
     padding-right: 1.5rem;
     padding-bottom: 5.625rem;
     padding-left: 1.5rem;
-
-    @include breakpoint-up(large) {
-      padding-right: 10.3125rem;
-      padding-bottom: 7.5rem;
-      padding-left: 10.3125rem;
-    }
   }
 
   &--paddings2 {
@@ -44,14 +39,6 @@ body {
     padding-bottom: 8.75rem;
     padding-left: 1.5rem;
   }
-
-  /*
-    @include breakpoint-up(large) {
-      
-      
-      padding-left: 10.3125rem;
-    }
-    */
 }
 
 .flex {
