@@ -1,17 +1,33 @@
 .about {
   text-align: center;
 
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
   p {
     margin-bottom: 3.875rem;
     line-height: 1.6;
   }
 
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   &__work {
     background-color: $darkViolet;
     width: 20rem;
     height: 21.875rem;
     margin-left: auto;
     margin-right: auto;
+
+    @include breakpoint-up(large) {
+      width: 50rem;
+      height: 15rem;
+    }
 
     h3 {
       color: $veryLightGray;
