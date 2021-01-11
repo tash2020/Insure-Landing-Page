@@ -19,19 +19,15 @@
   }
   &__work {
     background-color: $darkViolet;
-    width: 20rem;
-    height: 21.875rem;
-    margin-left: auto;
-    margin-right: auto;
+
+    min-height: 21.5rem;
 
     @include breakpoint-up(large) {
-      width: 50rem;
-      height: 15rem;
+      min-height: 15rem;
     }
 
     h3 {
       color: $veryLightGray;
-      padding-top: 4.625rem;
       font-size: 2.5rem;
       line-height: 1;
       margin-bottom: 2.8125rem;
@@ -43,7 +39,13 @@
 
     &--pattern {
       position: absolute;
-      left: 46vw;
+      left: 37vw;
+      top: 388vh;
+
+      @include breakpoint-up(large) {
+        left: 54vw;
+        top: 181vh;
+      }
     }
   }
 }
