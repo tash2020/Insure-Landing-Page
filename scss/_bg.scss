@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 28rem;
+    min-height: 25rem;
 
     @include breakpoint-up(large) {
       flex: 1;
@@ -35,13 +35,13 @@
 
   &__right1 {
     position: absolute;
-    left: 64%;
-    top: 150%;
+    left: 61.4vw;
+    top: 143vh;
   }
 
   &__right2 {
     position: absolute;
-    left: 60%;
+    left: 64.5vw;
   }
 
   &__text {
