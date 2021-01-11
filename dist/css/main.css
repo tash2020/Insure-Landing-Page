@@ -43,6 +43,21 @@ body.nonscroll {
   padding-left: 1.5rem;
 }
 
+.container--paddings3 {
+  padding-top: 4.6875rem;
+  padding-right: 2.6874rem;
+  padding-bottom: 4.375rem;
+  padding-left: 2.6874rem;
+}
+
+@media (min-width: 64em) {
+  .container--paddings3 {
+    padding-top: 4.375rem;
+    padding-right: 4.875rem;
+    padding-left: 5.375rem;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +248,7 @@ button:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 28rem;
+  min-height: 25rem;
 }
 
 @media (min-width: 64em) {
@@ -261,13 +276,13 @@ button:hover,
 
 .bg__right1 {
   position: absolute;
-  left: 64%;
-  top: 150%;
+  left: 61.4vw;
+  top: 143vh;
 }
 
 .bg__right2 {
   position: absolute;
-  left: 60%;
+  left: 64.5vw;
 }
 
 .bg__text {
@@ -343,22 +358,17 @@ button:hover,
 
 .about__work {
   background-color: #2d2640;
-  width: 20rem;
-  height: 21.875rem;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 21.5rem;
 }
 
 @media (min-width: 64em) {
   .about__work {
-    width: 50rem;
-    height: 15rem;
+    min-height: 15rem;
   }
 }
 
 .about__work h3 {
   color: #fafafa;
-  padding-top: 4.625rem;
   font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 2.8125rem;
@@ -370,6 +380,14 @@ button:hover,
 
 .about__work--pattern {
   position: absolute;
-  left: 46vw;
+  left: 37vw;
+  top: 388vh;
+}
+
+@media (min-width: 64em) {
+  .about__work--pattern {
+    left: 54vw;
+    top: 181vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
