@@ -68,6 +68,10 @@ body {
   &-ai-c {
     align-items: center;
   }
+
+  &-fd-c {
+    flex-direction: column;
+  }
 }
 
 a,
@@ -91,6 +95,7 @@ a:hover {
 h1,
 h2,
 h3,
+h4,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -108,6 +113,12 @@ h3 {
   font-family: 'DM Serif Display', sans-serif;
   color: $darkViolet;
   margin-bottom: 1.56rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: $font-bold;
 }
 
 button,
@@ -133,4 +144,12 @@ button,
 
 .icons {
   margin-bottom: 2.5rem;
+}
+
+ul,
+li {
+  text-decoration-style: none;
+  list-style-type: none;
+  color: $veryDarkViolet;
+  font-weight: $font-bold;
 }
