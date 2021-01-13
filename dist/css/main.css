@@ -58,6 +58,11 @@ body.nonscroll {
   }
 }
 
+.container--paddings4 {
+  padding-top: 5.375rem;
+  padding-bottom: 5.625rem;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +139,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 700;
+  margin-bottom: 2.5rem;
 }
 
 button,
@@ -162,13 +168,25 @@ button:hover,
   margin-bottom: 2.5rem;
 }
 
-ul,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
 li {
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
   list-style-type: none;
-  color: #2b272f;
+  color: #837d87;
   font-weight: 700;
+  margin-bottom: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09375rem;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .header {
@@ -435,5 +453,38 @@ li {
 .footer {
   text-align: center;
   background-color: #fafafa;
+}
+
+.footer nav {
+  position: relative;
+}
+
+.footer__logo img {
+  height: 1.375rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer__media {
+  margin-bottom: 1.875rem;
+}
+
+.footer__media a {
+  margin-right: 0.3rem;
+}
+
+.footer__company {
+  margin-bottom: 2.8125rem;
+}
+
+.footer__help {
+  margin-bottom: 2.8125rem;
+}
+
+.footer__contact {
+  margin-bottom: 2.8125rem;
+}
+
+.footer__others {
+  margin-bottom: 2.8125rem;
 }
 /*# sourceMappingURL=main.css.map */
