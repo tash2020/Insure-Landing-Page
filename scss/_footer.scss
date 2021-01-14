@@ -2,38 +2,44 @@
   text-align: center;
   background-color: $veryLightGray;
 
-  nav {
-    position: relative;
-  }
-
-  &__logo {
+  &__media {
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     img {
-      height: 1.375rem;
       margin-bottom: 1.875rem;
     }
-  }
 
-  &__media {
-    margin-bottom: 1.875rem;
-
-    a {
-      margin-right: 0.3rem;
+    &--network {
+      a {
+        margin-right: 0.3rem;
+      }
     }
   }
 
-  &__company {
-    margin-bottom: 2.8125rem;
-  }
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr;
 
-  &__help {
-    margin-bottom: 2.8125rem;
-  }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
 
-  &__contact {
-    margin-bottom: 2.8125rem;
-  }
+    &--company {
+      margin-bottom: 2.8125rem;
+    }
 
-  &__others {
-    margin-bottom: 2.8125rem;
+    &--help {
+      margin-bottom: 2.8125rem;
+    }
+
+    &--contact {
+      margin-bottom: 2.8125rem;
+    }
+
+    &--others {
+      margin-bottom: 2.8125rem;
+    }
   }
 }
