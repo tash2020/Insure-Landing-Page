@@ -182,7 +182,7 @@ li {
   font-weight: 700;
   margin-bottom: 1.375rem;
   text-transform: uppercase;
-  letter-spacing: 0.09375rem;
+  letter-spacing: 0.04rem;
 }
 
 li:hover {
@@ -455,36 +455,53 @@ li:hover {
   background-color: #fafafa;
 }
 
-.footer nav {
-  position: relative;
+@media (min-width: 64em) {
+  .footer__media {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.footer__logo img {
-  height: 1.375rem;
+.footer__media img {
   margin-bottom: 1.875rem;
 }
 
-.footer__media {
-  margin-bottom: 1.875rem;
-}
-
-.footer__media a {
+.footer__media--network a {
   margin-right: 0.3rem;
 }
 
-.footer__company {
+.footer__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 64em) {
+  .footer__links {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer__links--company {
   margin-bottom: 2.8125rem;
 }
 
-.footer__help {
+.footer__links--help {
   margin-bottom: 2.8125rem;
 }
 
-.footer__contact {
+.footer__links--contact {
   margin-bottom: 2.8125rem;
 }
 
-.footer__others {
+.footer__links--others {
   margin-bottom: 2.8125rem;
 }
 /*# sourceMappingURL=main.css.map */
