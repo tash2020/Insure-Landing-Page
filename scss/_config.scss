@@ -56,6 +56,11 @@ body {
   &--paddings4 {
     padding-top: 5.375rem;
     padding-bottom: 5.625rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 4.0625rem;
+      padding-bottom: 4.0625rem;
+    }
   }
 }
 
@@ -165,8 +170,14 @@ li {
   margin-bottom: 1.375rem;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+  line-height: 1.3;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @include breakpoint-up(large) {
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
   }
 }
