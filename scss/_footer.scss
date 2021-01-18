@@ -26,11 +26,17 @@
         margin-right: 0.3rem;
       }
     }
-  }
 
-  &__pattern1 {
-    position: absolute;
-    top: 482vh;
+    &--pattern1 {
+      position: absolute;
+      top: 482vh;
+    }
+
+    &--pattern2 {
+      position: absolute;
+      top: 236vh;
+      left: 0;
+    }
   }
 
   &__links {
