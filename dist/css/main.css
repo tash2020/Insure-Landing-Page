@@ -284,10 +284,6 @@ li:hover {
   color: #fafafa;
 }
 
-.bg {
-  background-color: #2d2640;
-}
-
 @media (min-width: 64em) {
   .bg {
     display: -webkit-box;
@@ -321,32 +317,36 @@ li:hover {
   }
 }
 
-.bg__left1 {
+.bg__introduction {
+  background-color: #2d2640;
+}
+
+.bg__introduction--left1 {
   position: absolute;
 }
 
-.bg__left2 {
+.bg__introduction--left2 {
   position: absolute;
   top: 68.3%;
 }
 
-.bg__right1 {
+.bg__introduction--right1 {
   position: absolute;
   left: 61.4vw;
   top: 143vh;
 }
 
-.bg__right2 {
+.bg__introduction--right2 {
   position: absolute;
   left: 64.5vw;
 }
 
-.bg__text {
+.bg__introduction--text {
   text-align: center;
 }
 
 @media (min-width: 64em) {
-  .bg__text {
+  .bg__introduction--text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -357,7 +357,7 @@ li:hover {
   }
 }
 
-.bg__text h1 {
+.bg__introduction--text h1 {
   font-family: 'DM serif Display', serif;
   font-weight: 400;
   color: #fafafa;
@@ -367,18 +367,18 @@ li:hover {
 }
 
 @media (min-width: 64em) {
-  .bg__text h1 {
+  .bg__introduction--text h1 {
     font-size: 4.0625rem;
   }
 }
 
-.bg__text p {
+.bg__introduction--text p {
   color: #fafafa;
   margin-bottom: 2.25rem;
 }
 
 @media (min-width: 64em) {
-  .bg__text p {
+  .bg__introduction--text p {
     font-size: 1.125rem;
   }
 }
@@ -436,14 +436,21 @@ li:hover {
   }
 }
 
+.about__work--text {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
 @media (min-width: 64em) {
   .about__work--text {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    left: 220px;
   }
 }
 
@@ -504,9 +511,15 @@ li:hover {
   margin-right: 0.3rem;
 }
 
-.footer__pattern1 {
+.footer__media--pattern1 {
   position: absolute;
   top: 482vh;
+}
+
+.footer__media--pattern2 {
+  position: absolute;
+  top: 236vh;
+  left: 0;
 }
 
 .footer__links {
