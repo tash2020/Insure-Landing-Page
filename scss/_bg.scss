@@ -1,6 +1,4 @@
 .bg {
-  background-color: $darkViolet;
-
   @include breakpoint-up(large) {
     display: flex;
     height: 36.25rem;
@@ -24,54 +22,58 @@
     }
   }
 
-  &__left1 {
-    position: absolute;
-  }
+  &__introduction {
+    background-color: $darkViolet;
 
-  &__left2 {
-    position: absolute;
-    top: 68.3%;
-  }
-
-  &__right1 {
-    position: absolute;
-    left: 61.4vw;
-    top: 143vh;
-  }
-
-  &__right2 {
-    position: absolute;
-    left: 64.5vw;
-  }
-
-  &__text {
-    text-align: center;
-
-    @include breakpoint-up(large) {
-      flex: 1;
-      order: 1;
-      text-align: left;
+    &--left1 {
+      position: absolute;
     }
 
-    h1 {
-      font-family: 'DM serif Display', serif;
-      font-weight: $font-regular;
-      color: $veryLightGray;
-      font-size: 2.75rem;
-      margin-bottom: 1.875rem;
-      line-height: 0.9;
+    &--left2 {
+      position: absolute;
+      top: 68.3%;
+    }
+
+    &--right1 {
+      position: absolute;
+      left: 61.4vw;
+      top: 143vh;
+    }
+
+    &--right2 {
+      position: absolute;
+      left: 64.5vw;
+    }
+
+    &--text {
+      text-align: center;
 
       @include breakpoint-up(large) {
-        font-size: $font-xl;
+        flex: 1;
+        order: 1;
+        text-align: left;
       }
-    }
 
-    p {
-      color: $veryLightGray;
-      margin-bottom: 2.25rem;
+      h1 {
+        font-family: 'DM serif Display', serif;
+        font-weight: $font-regular;
+        color: $veryLightGray;
+        font-size: 2.75rem;
+        margin-bottom: 1.875rem;
+        line-height: 0.9;
 
-      @include breakpoint-up(large) {
-        font-size: $font-lg;
+        @include breakpoint-up(large) {
+          font-size: $font-xl;
+        }
+      }
+
+      p {
+        color: $veryLightGray;
+        margin-bottom: 2.25rem;
+
+        @include breakpoint-up(large) {
+          font-size: $font-lg;
+        }
       }
     }
   }
