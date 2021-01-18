@@ -38,9 +38,14 @@
     }
 
     &--text {
+      position: absolute;
+      left: 20px;
+      z-index: 1;
+
       @include breakpoint-up(large) {
         justify-content: space-between;
-        align-items: baseline;
+        align-items: flex-end;
+        left: 220px;
       }
       h3 {
         color: $veryLightGray;
