@@ -17,10 +17,12 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
   &__work {
     background-color: $darkViolet;
 
     min-height: 21.5rem;
+    position: relative;
 
     @include breakpoint-up(large) {
       min-height: 15rem;
@@ -28,8 +30,10 @@
 
     &--pattern {
       position: absolute;
-      left: 37vw;
-      top: 388vh;
+
+      top: 0px;
+      right: 0px;
+      z-index: 500;
 
       @include breakpoint-up(large) {
         left: 54vw;
@@ -38,9 +42,9 @@
     }
 
     &--text {
-      position: absolute;
-      left: 20px;
-      z-index: 1;
+      position: relative;
+
+      z-index: 1000;
 
       @include breakpoint-up(large) {
         justify-content: space-between;
