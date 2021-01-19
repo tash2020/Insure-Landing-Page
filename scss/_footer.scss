@@ -8,12 +8,17 @@
   }
 
   &__media {
+    position: relative;
+    padding-bottom: 40px;
+
     @include breakpoint-up(large) {
       flex-direction: row;
       justify-content: space-between;
     }
     &--logo {
       margin-bottom: 1.875rem;
+      position: relative;
+      z-index: 1;
 
       @include breakpoint-up(large) {
         width: 7.125rem;
@@ -22,6 +27,9 @@
     }
 
     &--network {
+      position: relative;
+      z-index: 1;
+
       a {
         margin-right: 0.3rem;
       }
@@ -29,7 +37,7 @@
 
     &--pattern1 {
       position: absolute;
-      top: 482vh;
+      top: -85px;
     }
 
     &--pattern2 {
@@ -37,6 +45,15 @@
       top: 236vh;
       left: 0;
     }
+  }
+
+  &__line {
+    height: 0.5px;
+    width: 300px;
+    background-color: $darkGrayishViolet;
+    left: 40px;
+
+    position: absolute;
   }
 
   &__links {
@@ -50,6 +67,7 @@
 
     &--company {
       margin-bottom: 2.8125rem;
+      padding-top: 40px;
     }
 
     &--help {
