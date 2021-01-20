@@ -31,7 +31,9 @@
       z-index: 1;
 
       a {
-        margin-right: 0.3rem;
+        &:not(:last-child) {
+          margin-right: 1.125rem;
+        }
       }
     }
 
@@ -42,18 +44,23 @@
 
     &--pattern2 {
       position: absolute;
-      top: 236vh;
-      left: 0;
+      top: -63px;
+      left: -110px;
     }
   }
 
   &__line {
-    height: 0.5px;
-    width: 300px;
+    height: 2px;
+    width: 320px;
     background-color: $darkGrayishViolet;
-    left: 40px;
-
     position: absolute;
+    left: 20px;
+    opacity: 0.1;
+
+    @include breakpoint-up(large) {
+      width: 100%;
+      left: 0px;
+    }
   }
 
   &__links {
@@ -67,19 +74,31 @@
 
     &--company {
       margin-bottom: 2.8125rem;
-      padding-top: 40px;
+      padding-top: 2.5rem;
     }
 
     &--help {
       margin-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-top: 2.5rem;
+      }
     }
 
     &--contact {
       margin-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-top: 2.5rem;
+      }
     }
 
     &--others {
       margin-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-top: 2.5rem;
+      }
     }
   }
 }
