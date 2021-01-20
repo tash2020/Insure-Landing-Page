@@ -133,6 +133,7 @@ h2 {
   font-family: 'DM Serif Display', sans-serif;
   color: #2b272f;
   margin-bottom: 5.125rem;
+  padding-top: 45px;
 }
 
 h3 {
@@ -364,7 +365,7 @@ li:hover {
 }
 
 .bg__introduction--text h1 {
-  font-family: 'DM serif Display', serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: 400;
   color: #fafafa;
   font-size: 2.75rem;
@@ -405,6 +406,15 @@ li:hover {
   line-height: 1.6;
 }
 
+.about__line {
+  width: 153px;
+  height: 1px;
+  background-color: #2d2640;
+  position: absolute;
+  left: 110px;
+  opacity: 0.4;
+}
+
 .about__grid {
   display: -ms-grid;
   display: grid;
@@ -440,8 +450,8 @@ li:hover {
 
 @media (min-width: 64em) {
   .about__work--pattern {
-    left: 54vw;
-    top: 181vh;
+    top: 0px;
+    right: 0px;
   }
 }
 
@@ -452,19 +462,17 @@ li:hover {
 
 @media (min-width: 64em) {
   .about__work--text {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    left: 220px;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
   }
 }
 
 .about__work--text h3 {
+  font-family: 'DM Serif Display', serif;
   color: #fafafa;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1;
   margin-bottom: 2.8125rem;
 }
@@ -472,7 +480,6 @@ li:hover {
 @media (min-width: 64em) {
   .about__work--text h3 {
     font-size: 2.75rem;
-    line-height: 0;
   }
 }
 
@@ -527,8 +534,8 @@ li:hover {
   z-index: 1;
 }
 
-.footer__media--network a {
-  margin-right: 0.3rem;
+.footer__media--network a:not(:last-child) {
+  margin-right: 1.125rem;
 }
 
 .footer__media--pattern1 {
@@ -538,16 +545,24 @@ li:hover {
 
 .footer__media--pattern2 {
   position: absolute;
-  top: 236vh;
-  left: 0;
+  top: -63px;
+  left: -110px;
 }
 
 .footer__line {
-  height: 0.5px;
-  width: 300px;
+  height: 2px;
+  width: 320px;
   background-color: #837d87;
-  left: 40px;
   position: absolute;
+  left: 20px;
+  opacity: 0.1;
+}
+
+@media (min-width: 64em) {
+  .footer__line {
+    width: 100%;
+    left: 0px;
+  }
 }
 
 .footer__links {
@@ -567,18 +582,36 @@ li:hover {
 
 .footer__links--company {
   margin-bottom: 2.8125rem;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 .footer__links--help {
   margin-bottom: 2.8125rem;
 }
 
+@media (min-width: 64em) {
+  .footer__links--help {
+    padding-top: 2.5rem;
+  }
+}
+
 .footer__links--contact {
   margin-bottom: 2.8125rem;
 }
 
+@media (min-width: 64em) {
+  .footer__links--contact {
+    padding-top: 2.5rem;
+  }
+}
+
 .footer__links--others {
   margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links--others {
+    padding-top: 2.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
