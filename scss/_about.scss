@@ -9,6 +9,15 @@
     line-height: 1.6;
   }
 
+  &__line {
+    width: 153px;
+    height: 1px;
+    background-color: $darkViolet;
+    position: absolute;
+    left: 110px;
+    opacity: 0.4;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -36,8 +45,8 @@
       z-index: 500;
 
       @include breakpoint-up(large) {
-        left: 54vw;
-        top: 181vh;
+        top: 0px;
+        right: 0px;
       }
     }
 
@@ -47,19 +56,18 @@
       z-index: 1000;
 
       @include breakpoint-up(large) {
-        justify-content: space-between;
-        align-items: flex-end;
-        left: 220px;
+        flex-direction: inherit;
       }
+
       h3 {
+        font-family: 'DM Serif Display', serif;
         color: $veryLightGray;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         line-height: 1;
         margin-bottom: 2.8125rem;
 
         @include breakpoint-up(large) {
           font-size: 2.75rem;
-          line-height: 0;
         }
       }
 
