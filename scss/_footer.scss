@@ -9,7 +9,7 @@
 
   &__media {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 
     @include breakpoint-up(large) {
       flex-direction: row;
@@ -67,38 +67,31 @@
     display: grid;
     grid-template-columns: 1fr;
 
+    &:not(:first-child) {
+      padding-top: 2.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2.8125rem;
+    }
+
     @include breakpoint-up(large) {
       grid-template-columns: repeat(4, 1fr);
       text-align: left;
+      position: relative;
+      padding-top: 2.5rem;
     }
 
     &--company {
       margin-bottom: 2.8125rem;
-      padding-top: 2.5rem;
     }
 
     &--help {
       margin-bottom: 2.8125rem;
-
-      @include breakpoint-up(large) {
-        padding-top: 2.5rem;
-      }
     }
 
     &--contact {
       margin-bottom: 2.8125rem;
-
-      @include breakpoint-up(large) {
-        padding-top: 2.5rem;
-      }
-    }
-
-    &--others {
-      margin-bottom: 2.8125rem;
-
-      @include breakpoint-up(large) {
-        padding-top: 2.5rem;
-      }
     }
   }
 }
