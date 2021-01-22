@@ -26,7 +26,7 @@ body.nonscroll {
 
 .container {
   margin: 0 auto;
-  max-width: 65rem;
+  max-width: 64rem;
 }
 
 .container--paddings {
@@ -34,6 +34,12 @@ body.nonscroll {
   padding-right: 1.5rem;
   padding-bottom: 5.625rem;
   padding-left: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .container--paddings {
+    padding-right: 25rem;
+  }
 }
 
 .container--paddings2 {
@@ -362,6 +368,14 @@ li:hover {
   }
 }
 
+.bg__introduction--text__line {
+  width: 153px;
+  height: 1px;
+  position: absolute;
+  background-color: #fafafa;
+  position: absolute;
+}
+
 .bg__introduction--text h1 {
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
@@ -374,6 +388,7 @@ li:hover {
 @media (min-width: 64em) {
   .bg__introduction--text h1 {
     font-size: 4.0625rem;
+    padding-top: 5.125rem;
   }
 }
 
@@ -495,6 +510,11 @@ li:hover {
     height: 24.625rem;
     width: 100%;
   }
+}
+
+.footer nav {
+  position: relative;
+  padding: 1.28125rem 1.375rem;
 }
 
 .footer__media {
