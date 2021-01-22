@@ -58,6 +58,14 @@
         text-align: left;
       }
 
+      &__line {
+        width: 153px;
+        height: 1px;
+        position: absolute;
+        background-color: $veryLightGray;
+        position: absolute;
+      }
+
       h1 {
         font-family: 'DM Serif Display', serif;
         font-weight: $font-regular;
@@ -68,6 +76,7 @@
 
         @include breakpoint-up(large) {
           font-size: $font-xl;
+          padding-top: 5.125rem;
         }
       }
 
