@@ -24,13 +24,17 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 65rem;
+  max-width: 64rem;
 
   &--paddings {
     padding-top: 6.25rem;
     padding-right: 1.5rem;
     padding-bottom: 5.625rem;
     padding-left: 1.5rem;
+
+    @include breakpoint-up(large) {
+      padding-right: 25rem;
+    }
   }
 
   &--paddings2 {
