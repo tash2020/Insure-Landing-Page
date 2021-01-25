@@ -2,6 +2,10 @@
   nav {
     position: relative;
     padding: 1.28125rem 1.375rem;
+
+    @include breakpoint-up(large) {
+      padding: 1.875rem 0;
+    }
   }
 
   /*
