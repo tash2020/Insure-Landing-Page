@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
   max-width: 64rem;
 
+  @include breakpoint-up(large) {
+    margin: 0 10.3125rem;
+  }
+
   &--paddings {
     padding-top: 6.25rem;
     padding-right: 1.5rem;
@@ -45,6 +49,9 @@ body {
 
     @include breakpoint-up(large) {
       padding-top: 19.375rem;
+      padding-right: 0;
+      padding-bottom: 9.0625rem;
+      padding-left: 0;
     }
   }
 
@@ -140,6 +147,10 @@ h4 {
   font-weight: $font-bold;
   margin-bottom: 2.5rem;
   color: $darkGrayishViolet;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 2.1875rem;
+  }
 }
 
 button,
@@ -175,7 +186,7 @@ ul {
 li {
   text-decoration-style: none;
   list-style-type: none;
-  color: $darkGrayishViolet;
+  color: $veryDarkViolet;
   font-weight: $font-bold;
 
   text-transform: uppercase;
