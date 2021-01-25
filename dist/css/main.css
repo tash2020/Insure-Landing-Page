@@ -29,6 +29,12 @@ body.nonscroll {
   max-width: 64rem;
 }
 
+@media (min-width: 64em) {
+  .container {
+    margin: 0 10.3125rem;
+  }
+}
+
 .container--paddings {
   padding-top: 6.25rem;
   padding-right: 1.5rem;
@@ -52,6 +58,9 @@ body.nonscroll {
 @media (min-width: 64em) {
   .container--paddings2 {
     padding-top: 19.375rem;
+    padding-right: 0;
+    padding-bottom: 9.0625rem;
+    padding-left: 0;
   }
 }
 
@@ -163,6 +172,12 @@ h4 {
   color: #837d87;
 }
 
+@media (min-width: 64em) {
+  h4 {
+    margin-bottom: 2.1875rem;
+  }
+}
+
 button,
 .button {
   display: inline-block;
@@ -199,7 +214,7 @@ li {
   -webkit-text-decoration-style: none;
           text-decoration-style: none;
   list-style-type: none;
-  color: #837d87;
+  color: #2b272f;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
@@ -258,6 +273,12 @@ li:hover {
 .header nav {
   position: relative;
   padding: 1.28125rem 1.375rem;
+}
+
+@media (min-width: 64em) {
+  .header nav {
+    padding: 1.875rem 0;
+  }
 }
 
 .header__logo img {
@@ -424,7 +445,6 @@ li:hover {
   height: 1px;
   background-color: #2d2640;
   position: absolute;
-  left: 110px;
   opacity: 0.4;
 }
 
@@ -433,6 +453,7 @@ li:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  gap: 3.125rem;
 }
 
 @media (min-width: 64em) {
@@ -444,13 +465,13 @@ li:hover {
 
 .about__work {
   background-color: #2d2640;
-  min-height: 21.5rem;
+  height: 21.5rem;
   position: relative;
 }
 
 @media (min-width: 64em) {
   .about__work {
-    min-height: 15rem;
+    height: 15.625rem;
   }
 }
 
@@ -517,6 +538,15 @@ li:hover {
   padding: 1.28125rem 1.375rem;
 }
 
+@media (min-width: 64em) {
+  .footer nav {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 1.875rem;
+    padding-left: 0;
+  }
+}
+
 .footer__media {
   position: relative;
   padding-bottom: 2.5rem;
@@ -544,6 +574,7 @@ li:hover {
   .footer__media--logo {
     width: 7.125rem;
     height: 1.25rem;
+    margin-bottom: 0px;
   }
 }
 
@@ -556,6 +587,12 @@ li:hover {
   margin-right: 1.125rem;
 }
 
+@media (min-width: 64em) {
+  .footer__media--network {
+    margin-top: auto;
+  }
+}
+
 .footer__media--pattern1 {
   position: absolute;
   top: -85px;
@@ -564,12 +601,12 @@ li:hover {
 .footer__media--pattern2 {
   position: absolute;
   top: -63px;
-  left: -110px;
+  left: -180px;
 }
 
 .footer__line {
   height: 2px;
-  width: 320px;
+  min-width: 320px;
   background-color: #837d87;
   position: absolute;
   left: 20px;
