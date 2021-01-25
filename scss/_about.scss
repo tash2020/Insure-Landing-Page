@@ -14,13 +14,14 @@
     height: 1px;
     background-color: $darkViolet;
     position: absolute;
-    left: 110px;
+
     opacity: 0.4;
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 3.125rem;
 
     @include breakpoint-up(large) {
       grid-template-columns: repeat(3, 1fr);
@@ -30,11 +31,11 @@
   &__work {
     background-color: $darkViolet;
 
-    min-height: 21.5rem;
+    height: 21.5rem;
     position: relative;
 
     @include breakpoint-up(large) {
-      min-height: 15rem;
+      height: 15.625rem;
     }
 
     &--pattern {
