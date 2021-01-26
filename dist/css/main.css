@@ -45,6 +45,7 @@ body.nonscroll {
 @media (min-width: 64em) {
   .container--paddings {
     padding-right: 25rem;
+    padding-left: 0px;
   }
 }
 
@@ -87,7 +88,7 @@ body.nonscroll {
 @media (min-width: 64em) {
   .container--paddings4 {
     padding-top: 4.0625rem;
-    padding-bottom: 4.0625rem;
+    padding-bottom: 0px;
   }
 }
 
@@ -168,13 +169,14 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   color: #837d87;
 }
 
 @media (min-width: 64em) {
   h4 {
-    margin-bottom: 2.1875rem;
+    padding-bottom: 2.1875rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -219,10 +221,18 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.04rem;
   line-height: 1.3;
+  -webkit-transition: underline 150ms ease-in-out;
+  transition: underline 150ms ease-in-out;
 }
 
 li:not(:last-child) {
-  margin-bottom: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+
+@media (min-width: 64em) {
+  li:not(:last-child) {
+    padding-bottom: 1.25rem;
+  }
 }
 
 li:hover {
@@ -231,8 +241,10 @@ li:hover {
 
 @media (min-width: 64em) {
   li {
-    margin-bottom: 1.25rem;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    line-height: 1;
   }
 }
 
@@ -346,10 +358,11 @@ li:hover {
 @media (min-width: 64em) {
   .bg__introduction--image {
     background-image: url("/images/image-intro-desktop.jpg");
-    height: 650px;
-    width: 540px;
+    background-position: right;
+    background-size: contain;
+    min-height: 37.5rem;
     top: 100px;
-    left: 600px;
+    margin-right: 10.3125rem;
   }
 }
 
@@ -410,18 +423,20 @@ li:hover {
   .bg__introduction--text h1 {
     font-size: 4.0625rem;
     padding-top: 5.125rem;
+    margin-bottom: 2.5rem;
   }
 }
 
 .bg__introduction--text p {
   color: #fafafa;
-  margin-bottom: 2.25rem;
+  padding-bottom: 2.25rem;
   line-height: 1.5;
 }
 
 @media (min-width: 64em) {
   .bg__introduction--text p {
     font-size: 1.125rem;
+    padding-bottom: 1.875rem;
   }
 }
 
@@ -561,6 +576,7 @@ li:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-bottom: 2.25rem;
   }
 }
 
@@ -585,6 +601,15 @@ li:hover {
 
 .footer__media--network a:not(:last-child) {
   margin-right: 1.125rem;
+}
+
+.footer__media--network a svg path {
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
+.footer__media--network a:hover svg path {
+  fill: #2b272f;
 }
 
 @media (min-width: 64em) {
@@ -631,8 +656,20 @@ li:hover {
   padding-top: 2.5rem;
 }
 
+@media (min-width: 64em) {
+  .footer__links:not(:first-child) {
+    padding-top: 3.125rem;
+  }
+}
+
 .footer__links:not(:last-child) {
   margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 64em) {
@@ -646,14 +683,32 @@ li:hover {
 }
 
 .footer__links--company {
-  margin-bottom: 2.8125rem;
+  padding-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links--company {
+    padding-bottom: 4.0625rem;
+  }
 }
 
 .footer__links--help {
-  margin-bottom: 2.8125rem;
+  padding-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links--help {
+    padding-bottom: 4.0625rem;
+  }
 }
 
 .footer__links--contact {
-  margin-bottom: 2.8125rem;
+  padding-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .footer__links--contact {
+    padding-bottom: 4.0625rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
