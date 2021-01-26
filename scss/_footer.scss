@@ -26,6 +26,7 @@
     @include breakpoint-up(large) {
       flex-direction: row;
       justify-content: space-between;
+      padding-bottom: 2.25rem;
     }
     &--logo {
       margin-bottom: 1.875rem;
@@ -46,6 +47,14 @@
       a {
         &:not(:last-child) {
           margin-right: 1.125rem;
+        }
+
+        svg path {
+          transition: fill 150ms ease-in-out;
+        }
+
+        &:hover svg path {
+          fill: $veryDarkViolet;
         }
       }
 
@@ -86,10 +95,18 @@
 
     &:not(:first-child) {
       padding-top: 2.5rem;
+
+      @include breakpoint-up(large) {
+        padding-top: 3.125rem;
+      }
     }
 
     &:not(:last-child) {
       margin-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 0px;
+      }
     }
 
     @include breakpoint-up(large) {
@@ -100,15 +117,27 @@
     }
 
     &--company {
-      margin-bottom: 2.8125rem;
+      padding-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-bottom: 4.0625rem;
+      }
     }
 
     &--help {
-      margin-bottom: 2.8125rem;
+      padding-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-bottom: 4.0625rem;
+      }
     }
 
     &--contact {
-      margin-bottom: 2.8125rem;
+      padding-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        padding-bottom: 4.0625rem;
+      }
     }
   }
 }
