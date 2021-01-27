@@ -58,7 +58,7 @@ body.nonscroll {
 
 @media (min-width: 64em) {
   .container--paddings2 {
-    padding-top: 19.375rem;
+    padding-top: 18.75rem;
     padding-right: 0;
     padding-bottom: 9.0625rem;
     padding-left: 0;
@@ -154,8 +154,15 @@ h2 {
   font-size: 2.5rem;
   font-family: 'DM Serif Display', sans-serif;
   color: #2b272f;
-  margin-bottom: 5.125rem;
-  padding-top: 45px;
+  padding-bottom: 5.125rem;
+  padding-top: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 3.75rem;
+    padding-bottom: 5.9375rem;
+  }
 }
 
 h3 {
@@ -163,6 +170,12 @@ h3 {
   font-family: 'DM Serif Display', sans-serif;
   color: #2d2640;
   margin-bottom: 1.56rem;
+}
+
+@media (min-width: 64em) {
+  h3 {
+    font-size: 1.875rem;
+  }
 }
 
 h4 {
@@ -451,8 +464,13 @@ li:hover {
 }
 
 .about p {
-  margin-bottom: 3.875rem;
   line-height: 1.6;
+}
+
+@media (min-width: 64em) {
+  .about p {
+    font-size: 1.0625rem;
+  }
 }
 
 .about__line {
@@ -468,13 +486,23 @@ li:hover {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 3.125rem;
 }
 
 @media (min-width: 64em) {
   .about__grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    gap: 3.125rem;
+  }
+}
+
+.about__element {
+  padding-bottom: 3.875rem;
+}
+
+@media (min-width: 64em) {
+  .about__element {
+    padding-bottom: 10rem;
   }
 }
 
@@ -515,6 +543,9 @@ li:hover {
     -webkit-box-direction: inherit;
         -ms-flex-direction: inherit;
             flex-direction: inherit;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -529,6 +560,8 @@ li:hover {
 @media (min-width: 64em) {
   .about__work--text h3 {
     font-size: 2.75rem;
+    width: 50%;
+    margin-bottom: 0px;
   }
 }
 
@@ -640,7 +673,7 @@ li:hover {
 
 @media (min-width: 64em) {
   .footer__line {
-    width: 100%;
+    width: 74%;
     left: 0px;
   }
 }
