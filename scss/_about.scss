@@ -5,8 +5,11 @@
     text-align: left;
   }
   p {
-    margin-bottom: 3.875rem;
     line-height: 1.6;
+
+    @include breakpoint-up(large) {
+      font-size: 1.0625rem;
+    }
   }
 
   &__line {
@@ -21,10 +24,18 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3.125rem;
 
     @include breakpoint-up(large) {
       grid-template-columns: repeat(3, 1fr);
+      gap: 3.125rem;
+    }
+  }
+
+  &__element {
+    padding-bottom: 3.875rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 10rem;
     }
   }
 
@@ -58,6 +69,7 @@
 
       @include breakpoint-up(large) {
         flex-direction: inherit;
+        justify-content: space-between;
       }
 
       h3 {
@@ -69,6 +81,8 @@
 
         @include breakpoint-up(large) {
           font-size: 2.75rem;
+          width: 50%;
+          margin-bottom: 0px;
         }
       }
 
