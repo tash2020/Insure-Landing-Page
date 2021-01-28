@@ -13,12 +13,13 @@
   }
 
   &__line {
-    width: 153px;
+    width: 9.375rem;
     height: 1px;
     background-color: $darkViolet;
     position: absolute;
 
     opacity: 0.4;
+    left: 115px;
   }
 
   &__grid {
@@ -27,7 +28,7 @@
 
     @include breakpoint-up(large) {
       grid-template-columns: repeat(3, 1fr);
-      gap: 3.125rem;
+      gap: 1.5rem;
     }
   }
 
