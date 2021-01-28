@@ -27,7 +27,7 @@ body {
   max-width: 64rem;
 
   @include breakpoint-up(large) {
-    margin: 0 10.3125rem;
+    margin: 0 7.5rem;
   }
 
   &--paddings {
@@ -37,7 +37,7 @@ body {
     padding-left: 1.5rem;
 
     @include breakpoint-up(large) {
-      padding-right: 25rem;
+      padding-right: 0px;
       padding-left: 0px;
     }
   }
@@ -71,11 +71,10 @@ body {
 
   &--paddings4 {
     padding-top: 5.375rem;
-    padding-bottom: 5.625rem;
+    padding-bottom: 0px;
 
     @include breakpoint-up(large) {
       padding-top: 4.0625rem;
-      padding-bottom: 0px;
     }
   }
 }
