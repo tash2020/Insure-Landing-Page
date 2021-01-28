@@ -84,7 +84,7 @@
     opacity: 0.1;
 
     @include breakpoint-up(large) {
-      width: 74%;
+      width: 100%;
       left: 0px;
     }
   }
@@ -138,6 +138,19 @@
       @include breakpoint-up(large) {
         padding-bottom: 4.0625rem;
       }
+    }
+  }
+
+  &__attribution {
+    font-weight: $font-regular;
+    padding-top: 5.625rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 0px;
+    }
+
+    a {
+      color: mediumslateblue;
     }
   }
 }
