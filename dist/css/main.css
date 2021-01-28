@@ -31,7 +31,7 @@ body.nonscroll {
 
 @media (min-width: 64em) {
   .container {
-    margin: 0 10.3125rem;
+    margin: 0 7.5rem;
   }
 }
 
@@ -44,7 +44,7 @@ body.nonscroll {
 
 @media (min-width: 64em) {
   .container--paddings {
-    padding-right: 25rem;
+    padding-right: 0px;
     padding-left: 0px;
   }
 }
@@ -82,13 +82,12 @@ body.nonscroll {
 
 .container--paddings4 {
   padding-top: 5.375rem;
-  padding-bottom: 5.625rem;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 64em) {
   .container--paddings4 {
     padding-top: 4.0625rem;
-    padding-bottom: 0px;
   }
 }
 
@@ -349,7 +348,6 @@ li:hover {
 
 @media (min-width: 64em) {
   .bg {
-    height: 36.25rem;
     width: 100%;
   }
 }
@@ -357,6 +355,12 @@ li:hover {
 .bg__introduction {
   background-color: #2d2640;
   position: relative;
+}
+
+@media (min-width: 64em) {
+  .bg__introduction {
+    height: 36.25rem;
+  }
 }
 
 .bg__introduction--image {
@@ -375,7 +379,7 @@ li:hover {
     background-size: contain;
     min-height: 37.5rem;
     top: 100px;
-    margin-right: 10.3125rem;
+    margin-right: 7.5rem;
   }
 }
 
@@ -386,7 +390,7 @@ li:hover {
 
 .bg__introduction--left2 {
   position: absolute;
-  top: 68.3%;
+  top: 70%;
 }
 
 .bg__introduction--right1 {
@@ -412,6 +416,8 @@ li:hover {
     position: absolute;
     top: 0px;
     text-align: left;
+    width: 39%;
+    margin-right: 0px;
   }
 }
 
@@ -474,11 +480,12 @@ li:hover {
 }
 
 .about__line {
-  width: 153px;
+  width: 9.375rem;
   height: 1px;
   background-color: #2d2640;
   position: absolute;
   opacity: 0.4;
+  left: 115px;
 }
 
 .about__grid {
@@ -492,7 +499,7 @@ li:hover {
   .about__grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 3.125rem;
+    gap: 1.5rem;
   }
 }
 
@@ -673,7 +680,7 @@ li:hover {
 
 @media (min-width: 64em) {
   .footer__line {
-    width: 74%;
+    width: 100%;
     left: 0px;
   }
 }
@@ -743,5 +750,20 @@ li:hover {
   .footer__links--contact {
     padding-bottom: 4.0625rem;
   }
+}
+
+.footer__attribution {
+  font-weight: 400;
+  padding-top: 5.625rem;
+}
+
+@media (min-width: 64em) {
+  .footer__attribution {
+    padding-top: 0px;
+  }
+}
+
+.footer__attribution a {
+  color: mediumslateblue;
 }
 /*# sourceMappingURL=main.css.map */
