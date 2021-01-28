@@ -1,12 +1,15 @@
 .bg {
   @include breakpoint-up(large) {
-    height: 36.25rem;
     width: 100%;
   }
 
   &__introduction {
     background-color: $darkViolet;
     position: relative;
+
+    @include breakpoint-up(large) {
+      height: 36.25rem;
+    }
 
     &--image {
       position: relative;
@@ -22,7 +25,7 @@
         background-size: contain;
         min-height: 37.5rem;
         top: 100px;
-        margin-right: 10.3125rem;
+        margin-right: 7.5rem;
       }
     }
 
@@ -33,7 +36,7 @@
 
     &--left2 {
       position: absolute;
-      top: 68.3%;
+      top: 70%;
     }
 
     &--right1 {
@@ -57,6 +60,8 @@
         position: absolute;
         top: 0px;
         text-align: left;
+        width: 39%;
+        margin-right: 0px;
       }
 
       &__line {
