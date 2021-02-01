@@ -1,6 +1,24 @@
 .header {
   position: relative;
   z-index: 1;
+  &.open {
+    .header__hamburger {
+      content: url('/images/icon-close.svg');
+    }
+
+    .overlay {
+      display: block;
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: $darkViolet;
+    top: 4.6875rem;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
 
   nav {
     position: relative;
@@ -11,26 +29,10 @@
     }
   }
 
-  .overlay {
-    background-color: $darkViolet;
-    top: 4.6875rem;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    position: fixed;
-  }
-
   &__logo {
     img {
       width: 7.0625rem;
       height: 1.1875rem;
-    }
-  }
-
-  &__hamburger {
-    &.open {
-      content: url('/images/icon-close.svg');
-      transition: 200ms ease-in-out;
     }
   }
 
@@ -40,9 +42,9 @@
 
     &__item {
       display: block;
+      color: $darkViolet;
       text-align: center;
       text-transform: uppercase;
-      color: $veryLightGray;
       letter-spacing: 0.1rem;
 
       &--view-plans {
