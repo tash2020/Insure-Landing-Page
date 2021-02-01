@@ -1,3 +1,85 @@
+@-webkit-keyframes slide-in {
+  from {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  1% {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  1% {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.slide-in {
+  -webkit-animation: slide-in 1500ms ease-in forwards;
+          animation: slide-in 1500ms ease-in forwards;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  99% {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  99% {
+    visibility: visible;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.slide-out {
+  -webkit-animation: slide-out 150ms ease-in forwards;
+          animation: slide-out 150ms ease-in forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -265,6 +347,23 @@ li:hover {
   z-index: 1;
 }
 
+.header.open .header__hamburger {
+  content: url("/images/icon-close.svg");
+}
+
+.header.open .overlay {
+  display: block;
+}
+
+.header .overlay {
+  position: fixed;
+  background-color: #2d2640;
+  top: 4.6875rem;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
 .header nav {
   position: relative;
   padding: 1.28125rem 1.375rem;
@@ -276,24 +375,9 @@ li:hover {
   }
 }
 
-.header .overlay {
-  background-color: #2d2640;
-  top: 4.6875rem;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  position: fixed;
-}
-
 .header__logo img {
   width: 7.0625rem;
   height: 1.1875rem;
-}
-
-.header__hamburger.open {
-  content: url("/images/icon-close.svg");
-  -webkit-transition: 200ms ease-in-out;
-  transition: 200ms ease-in-out;
 }
 
 .header__menu {
@@ -303,9 +387,9 @@ li:hover {
 
 .header__menu__item {
   display: block;
+  color: #2d2640;
   text-align: center;
   text-transform: uppercase;
-  color: #fafafa;
   letter-spacing: 0.1rem;
 }
 
