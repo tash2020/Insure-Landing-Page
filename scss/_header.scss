@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 1;
-  &.open {
+  &.active {
     .header__hamburger {
       content: url('/images/icon-close.svg');
     }
@@ -42,10 +42,15 @@
 
     &__item {
       display: block;
-      color: $darkViolet;
+      justify-content: center;
       text-align: center;
+      color: $veryLightGray;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
+
+      &:not(:last-child) {
+        padding-bottom: 3rem;
+      }
 
       &--view-plans {
         border: 2px solid $veryLightGray;
@@ -66,7 +71,7 @@
       letter-spacing: 0.09375rem;
 
       &:not(:last-child) {
-        margin-right: 27px;
+        margin-right: 1.6875rem;
       }
 
       &:hover {
