@@ -38,18 +38,20 @@
 
   &__menu {
     position: absolute;
+    left: 6%;
     padding-top: 3.125rem;
 
     &__item {
-      display: block;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      text-align: center;
       color: $veryLightGray;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
+      text-align: center;
 
-      &:not(:last-child) {
-        padding-bottom: 3rem;
+      &:not(:nth-child(3)) {
+        padding-bottom: 2.5rem;
       }
 
       &--view-plans {
@@ -57,7 +59,12 @@
         padding: 1.125rem 3.4375rem;
         width: 20.375rem;
         height: 3.4375rem;
+        margin-top: 1.5625rem;
       }
+    }
+    .pattern {
+      position: absolute;
+      left: -7%;
     }
   }
 
