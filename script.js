@@ -1,10 +1,8 @@
-const hamburger = document.querySelector('#hamburger');
-const header = document.querySelector('.header');
-const overlay = document.querySelector('.overlay');
+let btnHamb = document.querySelector('.header__hamburger');
+let header = document.querySelector('.header');
+let overlay = document.querySelector('.overlay');
 
-hamburger.addEventListener('click', function () {
-  console.log('click hamburger');
-
+btnHamb.addEventListener('click', function () {
   if (header.classList.contains('active')) {
     header.classList.remove('active');
     overlay.classList.remove('slide-in');
