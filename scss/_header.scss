@@ -14,7 +14,7 @@
   .overlay {
     position: fixed;
     background-color: $darkViolet;
-    top: 4.6875rem;
+    top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -22,6 +22,7 @@
 
   nav {
     position: relative;
+    background: white;
     padding: 1.28125rem 1.375rem;
 
     @include breakpoint-up(large) {
@@ -69,6 +70,7 @@
   }
 
   &__options {
+    position: relative;
     &__list {
       font-size: $font-sm;
       text-transform: uppercase;
