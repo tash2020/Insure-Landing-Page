@@ -29,8 +29,8 @@
 }
 
 .slide-in {
-  -webkit-animation: slide-in 3000ms ease-in-out forwards;
-          animation: slide-in 3000ms ease-in-out forwards;
+  -webkit-animation: slide-in 3000ms ease-in forwards;
+          animation: slide-in 3000ms ease-in forwards;
 }
 
 @-webkit-keyframes slide-out {
@@ -60,8 +60,8 @@
 }
 
 .slide-out {
-  -webkit-animation: slide-out 300ms ease-in-out forwards;
-          animation: slide-out 300ms ease-in-out forwards;
+  -webkit-animation: slide-out 300ms ease-out forwards;
+          animation: slide-out 300ms ease-out forwards;
 }
 
 html {
@@ -369,6 +369,8 @@ li:hover {
   position: absolute;
   left: 6%;
   padding-top: 3.125rem;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .header__menu__item {
@@ -392,12 +394,23 @@ li:hover {
   padding-bottom: 2.5rem;
 }
 
+.header__menu__item:hover {
+  color: #837d87;
+}
+
 .header__menu__item--view-plans {
   border: 2px solid #fafafa;
   padding: 1.125rem 3.4375rem;
   width: 20.375rem;
   height: 3.4375rem;
   margin-top: 1.5625rem;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.header__menu__item--view-plans:hover {
+  background-color: #fafafa;
+  color: #2d2640;
 }
 
 .header__menu .pattern {
@@ -579,7 +592,14 @@ li:hover {
   background-color: #2d2640;
   position: absolute;
   opacity: 0.4;
-  left: 115px;
+  left: 7.1875rem;
+}
+
+@media (min-width: 40em) {
+  .about__line {
+    left: 10.9375rem;
+    width: 50%;
+  }
 }
 
 .about__grid {
@@ -611,6 +631,12 @@ li:hover {
   background-color: #2d2640;
   height: 21.5rem;
   position: relative;
+}
+
+@media (min-width: 40em) {
+  .about__work {
+    height: 19.7rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -656,6 +682,12 @@ li:hover {
   font-size: 2.25rem;
   line-height: 1;
   margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 40em) {
+  .about__work--text h3 {
+    width: 75%;
+  }
 }
 
 @media (min-width: 64em) {
@@ -757,6 +789,12 @@ li:hover {
   top: -85px;
 }
 
+@media (min-width: 40em) {
+  .footer__media--pattern1 {
+    display: none;
+  }
+}
+
 .footer__media--pattern2 {
   position: absolute;
   top: -63px;
@@ -770,6 +808,13 @@ li:hover {
   position: absolute;
   left: 20px;
   opacity: 0.1;
+}
+
+@media (min-width: null) {
+  .footer__line {
+    left: 8.0625rem;
+    width: 25rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -849,6 +894,12 @@ li:hover {
 .footer__attribution {
   font-weight: 400;
   padding-top: 5.625rem;
+}
+
+@media (min-width: 40em) {
+  .footer__attribution {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 64em) {
