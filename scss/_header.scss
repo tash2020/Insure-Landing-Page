@@ -41,6 +41,7 @@
     position: absolute;
     left: 6%;
     padding-top: 3.125rem;
+    transition: 300ms ease-in-out;
 
     &__item {
       display: flex;
@@ -55,12 +56,22 @@
         padding-bottom: 2.5rem;
       }
 
+      &:hover {
+        color: $darkGrayishViolet;
+      }
+
       &--view-plans {
         border: 2px solid $veryLightGray;
         padding: 1.125rem 3.4375rem;
         width: 20.375rem;
         height: 3.4375rem;
         margin-top: 1.5625rem;
+        transition: 250ms ease-in-out;
+
+        &:hover {
+          background-color: $veryLightGray;
+          color: $darkViolet;
+        }
       }
     }
     .pattern {
