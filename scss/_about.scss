@@ -4,6 +4,7 @@
   @include breakpoint-up(large) {
     text-align: left;
   }
+
   p {
     line-height: 1.6;
 
@@ -19,7 +20,12 @@
     position: absolute;
 
     opacity: 0.4;
-    left: 115px;
+    left: 7.1875rem;
+
+    @include breakpoint-up(medium) {
+      left: 10.9375rem;
+      width: 50%;
+    }
   }
 
   &__grid {
@@ -45,6 +51,10 @@
 
     height: 21.5rem;
     position: relative;
+
+    @include breakpoint-up(medium) {
+      height: 19.7rem;
+    }
 
     @include breakpoint-up(large) {
       height: 15.625rem;
@@ -79,6 +89,10 @@
         font-size: 2.25rem;
         line-height: 1;
         margin-bottom: 2.8125rem;
+
+        @include breakpoint-up(medium) {
+          width: 75%;
+        }
 
         @include breakpoint-up(large) {
           font-size: 2.75rem;
