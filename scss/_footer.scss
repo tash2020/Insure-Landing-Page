@@ -66,6 +66,10 @@
     &--pattern1 {
       position: absolute;
       top: -85px;
+
+      @include breakpoint-up(medium) {
+        display: none;
+      }
     }
 
     &--pattern2 {
@@ -82,6 +86,11 @@
     position: absolute;
     left: 20px;
     opacity: 0.1;
+
+    @include breakpoint-up(small) {
+      left: 8.0625rem;
+      width: 25rem;
+    }
 
     @include breakpoint-up(large) {
       width: 100%;
@@ -145,6 +154,9 @@
     font-weight: $font-regular;
     padding-top: 5.625rem;
 
+    @include breakpoint-up(medium) {
+      padding-top: 0px;
+    }
     @include breakpoint-up(large) {
       padding-top: 0px;
     }
