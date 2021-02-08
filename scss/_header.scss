@@ -51,13 +51,14 @@
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       text-align: center;
+      transition: underline 250ms ease-in-out;
 
       &:not(:nth-child(3)) {
         padding-bottom: 2.5rem;
       }
 
       &:hover {
-        color: $darkGrayishViolet;
+        text-decoration: underline;
       }
 
       &--view-plans {
