@@ -81,13 +81,13 @@
 
   &__line {
     height: 2px;
-    min-width: 320px;
+    min-width: 20rem;
     background-color: $darkGrayishViolet;
     position: absolute;
-    left: 20px;
+    left: 1.25rem;
     opacity: 0.1;
 
-    @include breakpoint-up(small) {
+    @include breakpoint-up(medium) {
       left: 8.0625rem;
       width: 25rem;
     }
