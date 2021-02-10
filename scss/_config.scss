@@ -9,20 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-.skip-link {
-  position: absolute;
-  top: 2.5rem;
-  left: 0;
-  background-color: blueviolet;
-  color: white;
-  padding: 0.5rem;
-  z-index: 100;
-
-  &:focus {
-    top: 0px;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
