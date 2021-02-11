@@ -15,7 +15,7 @@
 }
 
 .slide-in {
-  animation: slide-in 3000ms ease-in forwards;
+  animation: slide-in 200ms ease-in forwards;
 }
 
 @keyframes slide-out {
@@ -30,5 +30,5 @@
 }
 
 .slide-out {
-  animation: slide-out 300ms ease-out forwards;
+  animation: slide-out 200ms ease-out forwards;
 }
